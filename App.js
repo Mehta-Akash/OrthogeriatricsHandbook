@@ -3,7 +3,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import { Home } from './components/Accordion';
+import { Home } from './components/Home';
 import { DetailsScreen } from './components/DetailsScreen';
 
 // const DetailsScreen = () => {
@@ -23,7 +23,7 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={Home}
-          // options={{ title: 'Overview' }}
+          options={{ title: 'Contents' }}
         />
         <Stack.Screen name="Details" component={DetailsScreen} />
       </Stack.Navigator>

@@ -1,15 +1,17 @@
 export const styles = {
   list: {
     marginBottom: 20,
-    marginTop: 20,
+    marginTop: 10,
     alignItems: 'center',
+    backgroundColor: '#eee',
   },
   listItem: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     marginVertical: 5,
-    width: 380,
+    width: 370,
+    // backgroundColor: 'coral',
   },
   listItemContent: {
     flexDirection: 'row',
@@ -32,12 +34,48 @@ export const styles = {
     marginBottom: 8,
     paddingHorizontal: 10,
   },
+  h2: {
+    fontSize: 20,
+    marginTop: 16,
+    marginBottom: 5,
+    paddingHorizontal: 10,
+  },
+  h3: {
+    fontSize: 16,
+    marginTop: 16,
+    // marginBottom: 2,
+    paddingHorizontal: 15,
+  },
   block: {
+    marginBottom: 10,
+    marginTop: 15,
+
+    flexWrap: 'wrap',
+    flexDirection: 'row',
+    fontSize: 15,
+    paddingHorizontal: 20,
+    // backgroundColor: 'coral',
+    lineHeight: 20,
+  },
+  hr: {
+    alignSelf: 'stretch',
+    height: 1,
+    backgroundColor: '#aaa',
+    marginVertical: 8,
+  },
+  blockQuote: {
+    borderRadius: 10,
+    borderWidth: 0.5,
+    padding: 5,
+    backgroundColor: '#A1C2EF',
+    marginVertical: 8,
+    width: 380,
+    justifyContent: 'center',
     marginBottom: 10,
     flexWrap: 'wrap',
     flexDirection: 'row',
-    fontSize: 14,
-    width: 300,
+    fontSize: 15,
+    marginLeft: 15,
   },
 };
 

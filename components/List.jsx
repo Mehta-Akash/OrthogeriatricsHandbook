@@ -23,32 +23,38 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
 });
-//{ heading, id, subCategories }
+
 export const List = ({ props, navigation }) => {
   const [currentId, setCurrentId] = useState(null);
-  console.log(props.id);
-  //   const height = currentId ? 'auto' : 0;
-  //   const bottomRadius = currentId ? 0 : 8;
 
   return (
     <View>
       <TouchableOpacity
-        onPress={() => setCurrentId(props.id === currentId ? null : props.id)}
+        onPress={() => {
+          setCurrentId(props.id === currentId ? null : props.id);
+          !props.subCategories[0].title &&
+            navigation.navigate('Details', {
+              id: props.id,
+              item: props.subCategories[0],
+            });
+        }}
       >
         <View style={[styles.container]}>
           <Text style={styles.title}>{props.heading}</Text>
-          {props.subCategories.length > 0 && (
+          {props.subCategories[0].title && (
             <Icon name="chevron-down" color="black" size={24} />
           )}
         </View>
       </TouchableOpacity>
+
       <View style={[styles.items]}>
+        {/* if the current item is selected and has subcategories to choose from - show them on touch */}
         {props.id === currentId &&
+          props.subCategories[0].title &&
           props.subCategories.map((item, key) => (
-            // console.log('KEY in List', key),
             <ListItem
               {...{ item }}
-              // theKey={key}
+              key={Math.floor(Math.random() * 100)}
               isLast={props.id === 7}
               navigation={navigation}
               id={props.id}
