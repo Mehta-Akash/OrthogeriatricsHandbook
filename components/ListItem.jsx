@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -21,8 +21,6 @@ const styles = StyleSheet.create({
 
 export const ListItem = ({ item, isLast, navigation, theKey, id }) => {
   const bottomRadius = isLast ? 8 : 0;
-  //   const bottomMargin = isLast ? 10 : 0;
-  console.log('KEY', theKey);
   return (
     <View
       style={[
@@ -34,17 +32,7 @@ export const ListItem = ({ item, isLast, navigation, theKey, id }) => {
         },
       ]}
     >
-      <TouchableOpacity
-        onPress={() => {
-          navigation.navigate('Details', {
-            // itemId: theKey,
-            id,
-            item,
-          });
-        }}
-      >
-        <Text style={styles.item}>{item.title}</Text>
-      </TouchableOpacity>
+      <Text style={styles.item}>{item.title}</Text>
     </View>
   );
 };

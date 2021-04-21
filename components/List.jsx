@@ -27,6 +27,18 @@ const styles = StyleSheet.create({
 export const List = ({ props, navigation }) => {
   const [currentId, setCurrentId] = useState(null);
 
+  const ShevronDisplay = () => {
+    if (props.subCategories[0].title) {
+      return (
+        <Icon name="chevron-down" color="black" size={24} />
+      )
+    }
+    return (
+      <Text></Text>
+    )
+   
+  }
+
   return (
     <View>
       <TouchableOpacity
@@ -41,9 +53,12 @@ export const List = ({ props, navigation }) => {
       >
         <View style={[styles.container]}>
           <Text style={styles.title}>{props.heading}</Text>
-          {props.subCategories[0].title && (
-            <Icon name="chevron-down" color="black" size={24} />
-          )}
+          {props.subCategories[0].title && currentId ? 
+          <Icon name="chevron-up" color="black" size={24} />
+          :
+          <ShevronDisplay />
+        }
+          
         </View>
       </TouchableOpacity>
 
@@ -52,13 +67,24 @@ export const List = ({ props, navigation }) => {
         {props.id === currentId &&
           props.subCategories[0].title &&
           props.subCategories.map((item, key) => (
-            <ListItem
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate('Details', {
+                  // itemId: theKey,
+                  id: props.id,
+                  item,
+                });
+              }}
+            >
+             <ListItem
               {...{ item }}
               key={Math.floor(Math.random() * 100)}
               isLast={props.id === 7}
               navigation={navigation}
               id={props.id}
             />
+            </TouchableOpacity>
+       
           ))}
       </View>
     </View>
