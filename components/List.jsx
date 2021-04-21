@@ -5,7 +5,7 @@ import { Feather as Icon } from '@expo/vector-icons';
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 16,
+    marginTop: 10,
     backgroundColor: 'white',
     padding: 16,
     borderTopLeftRadius: 8,
@@ -29,15 +29,10 @@ export const List = ({ props, navigation }) => {
 
   const ShevronDisplay = () => {
     if (props.subCategories[0].title) {
-      return (
-        <Icon name="chevron-down" color="black" size={24} />
-      )
+      return <Icon name="chevron-down" color="black" size={24} />;
     }
-    return (
-      <Text></Text>
-    )
-   
-  }
+    return <Text></Text>;
+  };
 
   return (
     <View>
@@ -53,12 +48,11 @@ export const List = ({ props, navigation }) => {
       >
         <View style={[styles.container]}>
           <Text style={styles.title}>{props.heading}</Text>
-          {props.subCategories[0].title && currentId ? 
-          <Icon name="chevron-up" color="black" size={24} />
-          :
-          <ShevronDisplay />
-        }
-          
+          {props.subCategories[0].title && currentId ? (
+            <Icon name="chevron-up" color="black" size={24} />
+          ) : (
+            <ShevronDisplay />
+          )}
         </View>
       </TouchableOpacity>
 
@@ -76,15 +70,14 @@ export const List = ({ props, navigation }) => {
                 });
               }}
             >
-             <ListItem
-              {...{ item }}
-              key={Math.floor(Math.random() * 100)}
-              isLast={props.id === 7}
-              navigation={navigation}
-              id={props.id}
-            />
+              <ListItem
+                {...{ item }}
+                key={Math.floor(Math.random() * 100)}
+                isLast={props.id === 7}
+                navigation={navigation}
+                id={props.id}
+              />
             </TouchableOpacity>
-       
           ))}
       </View>
     </View>

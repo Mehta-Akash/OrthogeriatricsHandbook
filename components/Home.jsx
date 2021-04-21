@@ -23,7 +23,6 @@ export const Home = ({ navigation }) => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        {/* <Text style={styles.title}>Contents</Text> */}
         <List props={data[0]} navigation={navigation} />
         <List props={data[1]} navigation={navigation} />
         <List props={data[2]} navigation={navigation} />
@@ -31,13 +30,6 @@ export const Home = ({ navigation }) => {
         <List props={data[4]} navigation={navigation} />
         <List props={data[5]} navigation={navigation} />
         <List props={data[6]} navigation={navigation} />
-
-        {/* {data.map((item) => (
-          <Text>
-            <List props={item} />
-          </Text>
-        ))} */}
-        {/* <Table /> */}
       </View>
     </ScrollView>
   );
