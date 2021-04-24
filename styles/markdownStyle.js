@@ -1,11 +1,11 @@
 export const styles = {
-  list: {
+  bullet_list: {
     marginBottom: 20,
     marginTop: 10,
     alignItems: 'center',
     backgroundColor: '#eee',
   },
-  listItem: {
+  list_item: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
@@ -13,14 +13,14 @@ export const styles = {
     width: 370,
     // backgroundColor: 'coral',
   },
-  listItemContent: {
+  bullet_list_content: {
     flexDirection: 'row',
     flexShrink: 1,
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
     fontSize: 15,
   },
-  listItemBullet: {
+  bullet_list_icon: {
     width: 6,
     height: 6,
     backgroundColor: 'black',
@@ -28,42 +28,43 @@ export const styles = {
     marginRight: 10,
     marginTop: 8,
   },
-  h1: {
+  heading1: {
     fontSize: 30,
     marginTop: 20,
     marginBottom: 8,
     paddingHorizontal: 10,
   },
-  h2: {
+  heading2: {
     fontSize: 20,
     marginTop: 16,
     marginBottom: 5,
     paddingHorizontal: 10,
   },
-  h3: {
+  heading3: {
     fontSize: 16,
     marginTop: 16,
     // marginBottom: 2,
     paddingHorizontal: 15,
   },
-  block: {
+  paragraph: {
     marginBottom: 10,
     marginTop: 15,
 
     flexWrap: 'wrap',
     flexDirection: 'row',
     fontSize: 15,
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
     // backgroundColor: 'coral',
     lineHeight: 20,
   },
   hr: {
-    alignSelf: 'stretch',
+    alignSelf: 'center',
     height: 1,
     backgroundColor: '#aaa',
     marginVertical: 8,
+    width: '95%',
   },
-  blockQuote: {
+  blockquote: {
     borderRadius: 10,
     borderWidth: 0.5,
     padding: 5,
@@ -76,6 +77,9 @@ export const styles = {
     flexDirection: 'row',
     fontSize: 15,
     marginLeft: 15,
+  },
+  image: {
+    paddingHorizontal: -10,
   },
 };
 

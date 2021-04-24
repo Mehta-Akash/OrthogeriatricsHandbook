@@ -13,7 +13,7 @@ const CoverTable = () => (
     </DataTable.Header>
 
     <DataTable.Row>
-      <DataTable.Cell>Orthogeriatrics</DataTable.Cell>
+      <DataTable.Cell>OG</DataTable.Cell>
       <DataTable.Cell>Juniors</DataTable.Cell>
       <DataTable.Cell>Cons.</DataTable.Cell>
       <DataTable.Cell>Juniors</DataTable.Cell>

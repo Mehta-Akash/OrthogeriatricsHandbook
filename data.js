@@ -2,7 +2,7 @@ export default [
   {
     bg: '#A8DDE9',
     color: '#3F5B98',
-    id: 1,
+    id: 20,
     heading: 'Orthogeriatrics',
     subCategories: [
       {
@@ -28,7 +28,7 @@ export default [
             'Our Trust does not receive this additional payment, but the indicators are used to monitor the quality of our performance. \n\n' +
             'Our practice aims to comply with the NICE clinical Guideline 124 "The Management of Hip Fracture in Adults 2011" and the NICE quality standard 16. \n\n',
         ],
-        id: 1,
+        id: 201,
       },
       {
         title: 'Accident and emergency protocol',
@@ -64,27 +64,28 @@ export default [
             '* Ensure safe transfer, patient should not to be transferred to ward 20 min immediately after FIB, ensure documented pre and post transfer observations if transferred at 20 min post FIB \n' +
             '* Refer to orthopaedic and medical team, for clerking on the standardized Fractured neck of femur proforma. Consider urgent Medical opinion if inter-current medical problems',
         ],
-        id: 2,
+        id: 202,
       },
     ],
   },
   {
     bg: '#086E4B',
     color: '#FCBE4A',
-    id: 2,
+    id: 30,
     heading: 'Pre-operative care',
     subCategories: [
       {
         title: 'Completing pro-forma',
         details: [
           '# 2.1. COMPLETING PRO-FORMA \n\n' +
-            '** All patients should be clerked using the integrated care pathway (ICP) for the management of patients with fractured neck of femur.** \n\n' +
+            '**All patients should be clerked using the integrated care pathway (ICP) for the management of patients with fractured neck of femur.** \n\n' +
             'Results of investigations including blood tests, CXR and ECG should be reviewed and documented in the notes by the clerking doctor. Abnormalities should be managed as per guidelines below or discussed with Ortho-geriatric team. \n\n' +
             '## Cognitive Assessment \n\n' +
             'A pre-operative assessment of cognitive function with a ten point abbreviated mental test score is **essential** both **for on-going patient care and to achieve best practice tariff**. \n\n' +
             'Where a likely previously undiagnosed dementia is suspected, investigations should be arranged (CT brain scan, vit B12, Folate, TFTs), a collateral history sought, MOCA score and appropriate referral made, usually via the memory assessment team on discharge. \n\n' +
             '**Delirium is diagnosed using the 4AT** score and should be appropriately managed.\n\n',
         ],
+        id: 203,
       },
       {
         title: 'Prescribing',
@@ -103,6 +104,7 @@ export default [
             '* U&E should be checked on alternate days while receiving IV fluids or daily if abnormal in the perioperative period. \n\n' +
             '### Analgesia \n\n' +
             '*** \n\n' +
+            '![image](./assets/painAlgorithmNOF.png) \n' +
             'The following analgesia should be prescribed routinely unless contraindicated: \n\n' +
             '* **PO / IV paracetamol 1g 6hrly regularly (reduced dose if weight <50kg)** \n' +
             '* **Oxycodone oral liquid 5mg in 5ml; 2.5mg 2 hourly PRN** \n' +
@@ -151,6 +153,7 @@ export default [
             '* We routinely use the MUST tool, with all patients weighed weekly and clear referral guidelines to dieticians outlined. \n' +
             '* Fortisip drinks should be considered in all post-operative patients with a hip fracture. These should be routinely prescribed twice daily unless a contra-indication. _Caution in Diabetic patients who may need adjustment of medication_. \n\n',
         ],
+        id: 204,
       },
       {
         title: 'Initial assessment by orthopeadics/orthogeriatrics',
@@ -180,13 +183,14 @@ export default [
             '* Anaesthetic problems- history of difficult intubation, poor mouth opening , restricted neck movements (Ankylosing spondylitis, Rheumatoid arthritis or neck fracture ). Previous problems with GA \n\n' +
             'The decision that the patient is not medically fit for theatre is made jointly by the consultant orthogeritrician in conjunction with consultant anaesthetist with clear documentation about the management plan for optimisation where possible, palliation and analgesia. \n\n',
         ],
+        id: 205,
       },
     ],
   },
   {
     bg: '#FECBCA',
     color: '#FD5963',
-    id: 3,
+    id: 40,
     heading: 'Intraoperative care',
     subCategories: [
       {
@@ -249,6 +253,7 @@ export default [
             '*** \n\n' +
             'Both GA and Spinal anaesthesia associated with hypotension ,this can be predicted and steps taken to ameliorate the problem (monitor BP , less anaesthesia, avoiding pre-op dehydration , IV fluid administration, check lactate etc) to reduce post -operative avoid ischaemic problems. \n\n',
         ],
+        id: 206,
       },
       {
         title: 'Recovery',
@@ -266,13 +271,14 @@ export default [
             '* Vasal-vagal, pain, nausea and vomiting, bleeding ,DVT/PE and Allergy (drug reaction, latex etc) \n\n' +
             '**Safe handover and transfer of patients from recovery to Wards/ITU/HDU with clear post-operative plans.** \n\n',
         ],
+        id: 207,
       },
     ],
   },
   {
     bg: '#193B8C',
     color: '#FECBCA',
-    id: 4,
+    id: 50,
     heading: 'The basics of Middelton ward',
     subCategories: [
       {
@@ -302,13 +308,14 @@ export default [
             '**Medical patients discussed: Tuesdays, 12:30pm - 1pm** \n\n' +
             '_The junior doctors need to take in the MDT stickers (in one of the document holders on the wall of the doctors office) to record the discussions and plans for each patient during the meeting, then transfer these into the patients notes afterwards_ \n\n',
         ],
+        id: 208,
       },
     ],
   },
   {
     bg: '#FDBD50',
     color: '#F5F5EB',
-    id: 5,
+    id: 60,
     heading: 'Post-operative consideratons',
     subCategories: [
       {
@@ -320,6 +327,7 @@ export default [
             '* Post-operative bloods should be checked on day one and on alternate days if otherwise well. Correct electrolyte derangement (refer to local guidelines, cardiac monitoring if indicated).\n' +
             '* f pts showing signs of renal impairment refer to old results, exclude urinary retention, start fluid balance chart, check CK if history of long lie, and ensure good hydration. \n\n',
         ],
+        id: 209,
       },
       {
         title: 'Post-operative care',
@@ -392,11 +400,12 @@ export default [
             '*** \n\n' +
             '* PPI',
         ],
+        id: 210,
       },
       {
         title: 'Anaemia and blood transfusion',
         details: [
-          '# ANAEMI AND BLOOD TRANSFUSION \n\n' +
+          '# ANAEMIA AND BLOOD TRANSFUSION \n\n' +
             'Average blood loss from hip fracture surgery is approximately 20g/l. (also depends on the fracture type and type of operation) \n\n' +
             'It is important to document pre-operatively patients with predisposing factors for bleeding: \n\n' +
             '1. Those on anti-platelets or anticoagulants\n' +
@@ -413,6 +422,7 @@ export default [
             "> 6. Place yellow form into patient's **nursing (not medical!) notes folder** \n" +
             "> 7. Inform the nurse looking after the patient's bay and the nurse in charge to expect and chase up the blood \n\n",
         ],
+        id: 211,
       },
       {
         title: 'Secondary prevention of fragility fractures',
@@ -468,13 +478,14 @@ export default [
             '* Colecalciferol at a dose of 1000-2000 IU daily \n' +
             '* Options include: Fultium –D3 800iu capsules , one to two daily OR calcium 600mg +D3 400iu eg Adcal D3 one twice daily \n\n',
         ],
+        id: 212,
       },
     ],
   },
   {
     bg: '#A8DDE9',
     color: '#3F5B98',
-    id: 6,
+    id: 70,
     heading: 'The role of the MDT',
     subCategories: [
       {
@@ -511,13 +522,14 @@ export default [
             '* If not safe to go home, refer for rehabilitation\n' +
             '',
         ],
+        id: 213,
       },
     ],
   },
   {
     bg: '#FECBCA',
     color: '#FD5963',
-    id: 7,
+    id: 80,
     heading: 'Discharge',
     subCategories: [
       {
@@ -529,6 +541,7 @@ export default [
             '* Ensure patients discharged on opioids are also given laxatives. \n' +
             '* **#NOF patients need to complete 28 days VTE prophylaxis** post-surgery, even if they are sent home before that (unless on warfarin/DOAC). If unable to self-administer subcutaneous injections, they will need a community prescription which they take home with them (in green folder in Middleton doctor’s office, top shelf) \n\n',
         ],
+        id: 214,
       },
       {
         title: 'Discharge summaries',
@@ -542,6 +555,7 @@ export default [
             '* Changes made to social care (e.g. discharged to a nursing home/with TDS carers) \n' +
             '* Any discussions had around resuscitation/advance care planning \n\n',
         ],
+        id: 215,
       },
       {
         title: 'Arranging outpatient investigations/Follow-up',
@@ -551,6 +565,7 @@ export default [
             '* **IV bisphosphonate** referral letter in boxes behind notes trolley – fill in letter to Dr Menon and give to ward clerk to post. \n' +
             '* For **orthopaedic clinic** (patients who have had a total hip replacement will need to be seen in clinic), discuss with ward clerk/ortho team as they should do this. \n\n',
         ],
+        id: 216,
       },
     ],
   },

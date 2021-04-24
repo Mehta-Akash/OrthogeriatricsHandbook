@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import {
+  Pressable,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import { ListItem } from './ListItem';
 import { Feather as Icon } from '@expo/vector-icons';
 
@@ -35,8 +41,10 @@ export const List = ({ props, navigation }) => {
   };
 
   return (
-    <View>
-      <TouchableOpacity
+    <View style={{ borderRadius: 10 }}>
+      <Pressable
+        key={props.id}
+        style={styles.container}
         onPress={() => {
           setCurrentId(props.id === currentId ? null : props.id);
           !props.subCategories[0].title &&
@@ -45,16 +53,15 @@ export const List = ({ props, navigation }) => {
               item: props.subCategories[0],
             });
         }}
+        android_ripple={{ color: '#A0A0A0' }}
       >
-        <View style={[styles.container]}>
-          <Text style={styles.title}>{props.heading}</Text>
-          {props.subCategories[0].title && currentId ? (
-            <Icon name="chevron-up" color="black" size={24} />
-          ) : (
-            <ShevronDisplay />
-          )}
-        </View>
-      </TouchableOpacity>
+        <Text style={styles.title}>{props.heading}</Text>
+        {props.subCategories[0].title && currentId ? (
+          <Icon name="chevron-up" color="black" size={24} />
+        ) : (
+          <ShevronDisplay />
+        )}
+      </Pressable>
 
       <View style={[styles.items]}>
         {/* if the current item is selected and has subcategories to choose from - show them on touch */}
@@ -69,6 +76,7 @@ export const List = ({ props, navigation }) => {
                   item,
                 });
               }}
+              key={item.id}
             >
               <ListItem
                 {...{ item }}
